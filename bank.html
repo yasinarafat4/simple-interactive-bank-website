@@ -21,12 +21,12 @@
          Deposit, Withdraw, and Balance section
         --------------------------------------->
       <section class="mt-12">
-        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
-          <div class="bg-green-400 p-8 rounded-xl text-center">
+        <div class="md:grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+          <div class="bg-green-400 p-8 rounded-xl text-center mb-2">
             <h4 class="text-2xl">Deposit</h4>
             <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
           </div>
-          <div class="bg-pink-400 p-8 rounded-xl text-center">
+          <div class="bg-pink-400 p-8 rounded-xl text-center mb-2">
             <h4 class="text-2xl">Withdraw</h4>
             <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
           </div>
@@ -42,15 +42,15 @@
         --------------------------------------->
       <!-- Doing Deposit -->
       <section class="mt-12">
-        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
-          <div class="bg-violet-500 p-8 rounded-xl">
+        <div class="md:grid grid-cols-2 gap-4 w-9/12 mx-auto">
+          <div class="bg-violet-500 p-8 rounded-xl mb-2">
             <h4 class="text-2xl text-white mb-4">Please Deposit</h4>
             <input
-              class="w-9/12 block mb-4 p-2 rounded-lg"
+              class="md:w-full block mb-4 p-2 rounded-lg"
               type="text"
               name=""
               id="deposit-field"
-              placeholder="$ Amount you Want to deposit"
+              placeholder="$ Put Deposit Amount"
             />
             <button
               id="btn-deposit"
@@ -63,11 +63,11 @@
           <div class="bg-fuchsia-500 p-8 rounded-xl">
             <h4 class="text-2xl text-white mb-4">Please Withdraw</h4>
             <input
-              class="w-9/12 block mb-4 p-2 rounded-lg"
+              class="md:w-full block mb-4 p-2 rounded-lg"
               type="text"
               name=""
               id="withdraw-field"
-              placeholder="$ Amount you Want to withdraw"
+              placeholder="$ Put Withdraw Amount"
             />
             <button
               id="btn-withdraw"
