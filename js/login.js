@@ -25,7 +25,7 @@ document.getElementById("btn-submit").addEventListener("click", function () {
   //   console.log(password);
 
   // step-4
-  if (email === "baaperbank@gmail.com" && password === "1122") {
+  if (email === "baaperbank@gmail.com" && password === "1526") {
     window.location.href = "bank.html";
   } else {
     alert("Please Enter Valid Information");
