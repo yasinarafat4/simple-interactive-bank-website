@@ -21,6 +21,15 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   const newDepositAmountString = depositField.value;
   //step 4
   const newDepositAmount = parseFloat(newDepositAmountString);
+
+  //clearing the withdraw field
+  depositField.value = "";
+
+  // validation, if user give empty or letter input
+  if (isNaN(newDepositAmount)) {
+    alert("Please Provide A Valid Number");
+    return;
+  }
   //step 3
   const depositTotalElement = document.getElementById("deposit-total");
   const previousDepositTotalString = depositTotalElement.innerText;
@@ -39,7 +48,4 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   //step 6
   const currentBalanceTotal = previousBalanceTotal + newDepositAmount;
   balanceTotalElement.innerText = currentBalanceTotal;
-
-  //clearing the deposit field
-  depositField.value = "";
 });
