@@ -25,9 +25,9 @@ document.getElementById("btn-submit").addEventListener("click", function () {
   //   console.log(password);
 
   // step-4
-  if (email === "mdyahasib@gmail.com" && password === "1122") {
-    console.log("Valid User");
+  if (email === "baaperbank@gmail.com" && password === "1122") {
+    window.location.href = "bank.html";
   } else {
-    console.log("Invalid User");
+    alert("Please Enter Valid Information");
   }
 });
