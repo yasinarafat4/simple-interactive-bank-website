@@ -7,9 +7,9 @@
 //for non-input (element other than input, textarea) use innerText to get the text.
 // extra step: clear the deposit field
 
-//step 4: making number to string
+//step 4: convert string to number type
 
-// step 5: get balance current total
+// step 5: get current balance total
 
 // step 6: add deposit amount to balance and calculate current total balance
 //-----------------------
